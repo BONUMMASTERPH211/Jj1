@@ -4,8 +4,8 @@ const { sendMessage } = require('../handles/message');
 module.exports = {
   name: "shoti",
   description: "Send a random shoti video",
-  author: "Mark and GeoDevz69",
-  //yeyy working sya
+  author: "BONUMMASTER MINGMING",
+  //I LOVE U
 
   async execute(senderId, args, pageAccessToken) {
     try {
@@ -13,7 +13,7 @@ module.exports = {
       const { url: url, name, description } = response.data;
 
       await sendMessage(senderId, {
-        text: `🌸 Username: ${name}\n🗯️ Description: ${description}\n🧛 Modder: GeoDevz69`
+        text: `🌸 Username: ${name}\n🗯️ Description: ${description}\n🧛 Modder: BONUMMASTER MINGMING`
       }, pageAccessToken);
 
       await sendMessage(senderId, {
