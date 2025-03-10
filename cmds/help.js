@@ -32,7 +32,7 @@ module.exports = {
 
     // Display all commands if "help all" is provided
     if (args[0]?.toLowerCase() === 'all') {
-      const helpTextMessage = `╭─❍「 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 」\n│ [ Total Commands : ${totalCommands} ]\n│ ${commands.map((cmd, index) => `\n│ ${index + 1}. ${cmd.title}\n│ ○ ${cmd.description}`).join('')}\n│\n╰────────────⧕\n\n\n├─────☾⋆\n│ » Owner: BONUMMASTER\n│ » MINGMING\n│ » UNITED AS ONE\n│ » UNDERGROUNDSECURITYPH\n╰────────────⧕`;
+      const helpTextMessage = `╭─❍「 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 」\n│ [ Total Commands : ${totalCommands} ]\n│ ${commands.map((cmd, index) => `\n│ ${index + 1}. ${cmd.title}\n│ ○ ${cmd.description}`).join('')}\n│\n╰────────────⧕\n\n\n├─────☾⋆\n│ » Owner: BONUMMASTER\n│ » MINGMING\n│ » UNITED AS ONE\n│ » UNDERGROUND SECURITY PH\n╰────────────⧕`;
       return sendMessage(senderId, { text: helpTextMessage }, pageAccessToken);
     }
 
